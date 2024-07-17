@@ -29,7 +29,7 @@ header
   width: 100%;
   /* 高さ:可変 */
   height: 60vh;
-  background-image: url(../img/company.jpg);
+  background-image: url(../img/blog.jpg);
   /* 背景画像の表示位置を設定（中央上） */
   background-position: center top;
   /* 背景画像の折り返しを無効化 */
@@ -42,7 +42,7 @@ header
   text-align: center;
   margin: 0 auto;
   position: relative;
-  top:40%;
+  top: 40%;
   color: white;
   font-size: 5rem;
 }
@@ -53,6 +53,7 @@ header
   flex-direction: column;
   /* 子要素を中央揃え */
   align-items: center;
+  margin-bottom: 2%;
 }
 
 .group h1 {
@@ -80,6 +81,10 @@ header
   background-color: #e9e9e9;
 }
 
+.text p {
+  height: 15vh;
+}
+
 #blog {
   /* 全幅表示 */
   width: 100%;
@@ -91,38 +96,86 @@ header
   /* 背景画像の折り返しを無効化 */
   background-repeat: no-repeat;
   margin-bottom: 5%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.blog-title {
+  color: white;
+  text-align: center;
+
+}
+
+/* TODO posisionで指定 */
+.info {
+  font-size: 3rem;
+  margin-bottom: 0%;
+}
+
+/* TODO posisionで指定 */
+.blog {
+  font-size: 4rem;
+  margin-top: 1%;
+}
+
+/* 
+Labs
+*/
+
+#labs {
+  margin-bottom: 5%;
+}
 .contents {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .contents .text {
   width: 70%;
 }
 
+/* 
+talks
+*/
+
+#talks {
+  margin-bottom: 5%;
+}
+
+/* 
+Links
+*/
+
+#links {
+  margin-bottom: 5%;
+} 
+
 .container {
   display: flex;
   justify-content: space-around;
-  margin-top: 5%;
+  padding: 0%;
+  margin-top: 2%;
 }
 
 .box {
   width: 20%;
-  height: 15vh;
+  height: 28vh;
   background-color: white;
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
 }
 
 .policy {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 1% 10%;
 }
 
 #footer {
   background-color: black;
   color: #e9e9e9;
+  height: 12vh;
 }
 
 #footer p {
@@ -133,11 +186,25 @@ header
   display: flex;
   justify-content: center;
 }
+
 .x-icon {
   width: 7%;
+  padding: 2% 5%;
 }
+
 .main-icon {
   width: 7%;
+  padding: 2% 5%;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  text-decoration: none;
+  font-size: 4rem;
 }
 
 /* 
