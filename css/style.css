@@ -28,7 +28,7 @@ header
   /* 全幅表示 */
   width: 100%;
   /* 高さ:可変 */
-  height: 60vh;
+  height: 50vh;
   background-image: url(../img/blog.jpg);
   /* 背景画像の表示位置を設定（中央上） */
   background-position: center top;
@@ -47,12 +47,16 @@ header
   font-size: 5rem;
 }
 
+/* 共通のコンテンツ幅設定クラス */
+.wrapper {
+  padding: 0 5%
+
+}
+
 .group {
   display: flex;
   /* 縦方向に並べる */
   flex-direction: column;
-  /* 子要素を中央揃え */
-  align-items: center;
   margin-bottom: 2%;
 }
 
@@ -63,26 +67,33 @@ header
 }
 
 .group h2 {
-  font-size: 1.2em;
+  font-size: 1.6em;
   margin: 10px 0 0 0;
   padding: 0;
 }
 
 .underline {
-  width: 50%;
+  width: 30%;
   height: 1vh;
   margin: 10px 0;
   /* 上下のマージンを追加 */
   background: linear-gradient(to right, black, white);
 }
 
-.text {
-  text-align: center;
-  background-color: #e9e9e9;
+.underline-flex {
+  width: 90%;
+  height: 1vh;
+  margin: 10px 0;
+  /* 上下のマージンを追加 */
+  background: linear-gradient(to right, black, white);
+}
+
+.flex {
+  display: flex
 }
 
 .text p {
-  height: 15vh;
+  font-size: 1.5rem;
 }
 
 #blog {
@@ -126,6 +137,7 @@ Labs
 
 #labs {
   margin-bottom: 5%;
+  margin-right: 5%;
 }
 .contents {
   display: flex;
@@ -142,6 +154,7 @@ talks
 
 #talks {
   margin-bottom: 5%;
+  margin-right: 5%;
 }
 
 /* 
