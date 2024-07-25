@@ -34,17 +34,16 @@ header
   background-position: center top;
   /* 背景画像の折り返しを無効化 */
   background-repeat: no-repeat;
-
-  margin-bottom: 5%;
+  background-size: cover;
+  position: relative;
 }
 
 #header .top {
-  text-align: center;
-  margin: 0 auto;
-  position: relative;
-  top: 40%;
+  position: absolute;
+  right: 10%;
+  top: 7%;
   color: white;
-  font-size: 5rem;
+  font-size: 10rem;
 }
 
 /* 共通のコンテンツ幅設定クラス */
@@ -212,7 +211,7 @@ li.policy-li {
 
 #footer p {
   text-align: right;
-  margin: 4%;
+  margin: 1%;
 }
 
 .icon {
@@ -228,6 +227,13 @@ li.policy-li {
 
 .mail-icon {
   width: 7%;
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .button {
@@ -253,6 +259,8 @@ li.policy-li {
 */
 
 /* TODO */
-/* @media screen and (max-width: ***px) {
-  
-} */
+@media screen and (max-width: 950px) {
+  .flex {
+    flex-direction: column;
+  }
+}
