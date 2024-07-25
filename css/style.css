@@ -28,8 +28,8 @@ header
   /* 全幅表示 */
   width: 100%;
   /* 高さ:可変 */
-  height: 50vh;
-  background-image: url(../img/blog.jpg);
+  height: 100vh;
+  background-image: url(../img/img_SP.png);
   /* 背景画像の表示位置を設定（中央上） */
   background-position: center top;
   /* 背景画像の折り返しを無効化 */
@@ -50,7 +50,6 @@ header
 /* 共通のコンテンツ幅設定クラス */
 .wrapper {
   padding: 0 5%
-
 }
 
 .group {
@@ -139,6 +138,7 @@ Labs
   margin-bottom: 5%;
   margin-right: 5%;
 }
+
 .contents {
   display: flex;
   justify-content: space-around;
@@ -163,7 +163,7 @@ Links
 
 #links {
   margin-bottom: 5%;
-} 
+}
 
 .container {
   display: flex;
@@ -174,13 +174,10 @@ Links
 }
 
 /*  */
-.container > div {
-  /* 均等幅 */
+.container>div {
+  /* コンテナ内で均等幅にする */
   flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f0f0;
   width: 85%;
 }
 
@@ -199,8 +196,12 @@ Links
 
 .policy {
   display: flex;
-  justify-content: space-evenly;
-  padding: 1% 10%;
+  justify-content: flex-start;
+  padding: 1% 5%;
+}
+
+li.policy-li {
+  margin-right: 4%;
 }
 
 #footer {
@@ -210,22 +211,23 @@ Links
 }
 
 #footer p {
-  text-align: center;
+  text-align: right;
+  margin: 4%;
 }
 
 .icon {
   display: flex;
-  justify-content: center;
+  /* 左寄せ */
+  justify-content: flex-start;
 }
 
 .x-icon {
   width: 7%;
-  padding: 2% 5%;
+  margin-right: 5%;
 }
 
-.main-icon {
+.mail-icon {
   width: 7%;
-  padding: 2% 5%;
 }
 
 .button {
@@ -236,6 +238,14 @@ Links
   border: 2px solid white;
   text-decoration: none;
   font-size: 4rem;
+}
+
+.contact-group {
+  padding: 0 5%;
+}
+
+.contact-us-title {
+  font-size: 2rem;
 }
 
 /* 
