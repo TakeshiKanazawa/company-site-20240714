@@ -36,6 +36,7 @@ header
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin-bottom: 5%;
 }
 
 #header .top {
@@ -91,42 +92,15 @@ header
 }
 
 .text p {
+  width: 85%;
   font-size: 1.5rem;
 }
 
-#blog {
-  /* 全幅表示 */
-  width: 100%;
-  /* 高さ:可変 */
-  height: 60vh;
-  background-image: url(../img/blog.jpg);
-  /* 背景画像の表示位置を設定（中央上） */
-  background-position: center top;
-  /* 背景画像の折り返しを無効化 */
-  background-repeat: no-repeat;
-  margin-bottom: 5%;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.blog-title {
-  color: white;
-  text-align: center;
-
-}
-
-/* TODO posisionで指定 */
-.info {
-  font-size: 3rem;
-  margin-bottom: 0%;
-}
-
-/* TODO posisionで指定 */
-.blog {
-  font-size: 4rem;
-  margin-top: 1%;
+/* 
+About us  
+*/
+#about {
+  margin-bottom: 10%;
 }
 
 /* 
@@ -136,6 +110,7 @@ Labs
 #labs {
   margin-bottom: 5%;
   margin-right: 5%;
+  width: 33%;
 }
 
 .contents {
@@ -154,6 +129,16 @@ talks
 #talks {
   margin-bottom: 5%;
   margin-right: 5%;
+  width: 33%;
+}
+
+/* 
+Articles
+*/
+#articles {
+  margin-bottom: 5%;
+  margin-right: 5%;
+  width: 33%;
 }
 
 /* 
@@ -214,10 +199,15 @@ li.policy-li {
   margin: 1%;
 }
 
-.icon {
+.footer-icon {
   display: flex;
   /* 左寄せ */
   justify-content: flex-start;
+  ;
+}
+
+.icon img {
+  max-width: 60%;
 }
 
 .x-icon {
@@ -233,7 +223,7 @@ li.policy-li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  margin-top: 5%;
 }
 
 .button {
@@ -259,8 +249,58 @@ li.policy-li {
 */
 
 /* TODO */
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 968px) {
+
+  /* セクションを縦配置にする */
   .flex {
     flex-direction: column;
+  }
+
+  /* メイン画像の文字サイズ */
+  #header .top {
+    font-size: 4rem;
+  }
+
+  /* タイトルグループ */
+  .group {
+    text-align: center;
+
+  }
+
+  /* About usのアンダーライン */
+  .underline {
+    width: 100%;
+  }
+
+  /* About us以外のアンダーライン */
+  .underline-flex {
+    width: 100%;
+  }
+
+  .contents {
+    flex-wrap: nowrap;
+  }
+
+  .text p {
+    text-align: center;
+  }
+
+  #about {
+    margin-bottom: 5%;
+  }
+
+  #labs {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  #talks {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  #articles {
+    width: 100%;
+    margin-bottom: 10%;
   }
 }
