@@ -28,7 +28,7 @@ header
   width: 100%;
   background-size: 100%;
   /* 画像を60%の高さ */
-  height: 60vh;
+  height: 50vh;
   background-image: url(../img/img_PC.png);
   /* 画像の表示位置を指定 */
   background-position: 70% 80%;
@@ -39,8 +39,8 @@ header
 
 .header__top {
   position: absolute;
-  right: 12%;
-  top: -1%;
+  right: 10%;
+  top: -10%;
   color: white;
   font-size: 9rem;
 }
