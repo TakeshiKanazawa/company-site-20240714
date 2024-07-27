@@ -346,13 +346,6 @@ Links
     padding: 3% 4%;
   }
 
-  .icon {
-    flex-shrink: 0;
-    /* アイコンが縮小されないようにする */
-    margin-right: 10px;
-    /* 必要に応じて調整 */
-  }
-
   .contents__text {
     text-align: center;
   }
@@ -363,10 +356,10 @@ Links
 }
 
 @media screen and (max-width: 620px) {
-
   .header__top {
     font-size: 3rem;
   }
+
   .header {
     height: 25vh;
   }
