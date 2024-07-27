@@ -24,22 +24,18 @@ li {
 header
 */
 
-#header {
-  /* 全幅表示 */
+.header {
   width: 100%;
-  /* 高さ:可変 */
   height: 100vh;
   background-image: url(../img/img_SP.png);
-  /* 背景画像の表示位置を設定（中央上） */
   background-position: center top;
-  /* 背景画像の折り返しを無効化 */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   margin-bottom: 5%;
 }
 
-#header .top {
+.header__top {
   position: absolute;
   right: 10%;
   top: 7%;
@@ -49,23 +45,22 @@ header
 
 /* 共通のコンテンツ幅設定クラス */
 .wrapper {
-  padding: 0 5%
+  padding: 0 5%;
 }
 
 .group {
   display: flex;
-  /* 縦方向に並べる */
   flex-direction: column;
   margin-bottom: 2%;
 }
 
-.group h1 {
+.group__title {
   font-size: 2em;
   margin: 0;
   padding: 0;
 }
 
-.group h2 {
+.group__subtitle {
   font-size: 1.6em;
   margin: 10px 0 0 0;
   padding: 0;
@@ -75,20 +70,18 @@ header
   width: 30%;
   height: 1vh;
   margin: 10px 0;
-  /* 上下のマージンを追加 */
   background: linear-gradient(to right, black, white);
 }
 
-.underline-flex {
+.underline--flex {
   width: 90%;
   height: 1vh;
   margin: 10px 0;
-  /* 上下のマージンを追加 */
   background: linear-gradient(to right, black, white);
 }
 
 .flex {
-  display: flex
+  display: flex;
 }
 
 .text p {
@@ -99,7 +92,8 @@ header
 /* 
 About us  
 */
-#about {
+
+.about {
   margin-bottom: 10%;
 }
 
@@ -107,7 +101,7 @@ About us
 Labs
 */
 
-#labs {
+.labs {
   margin-bottom: 5%;
   margin-right: 5%;
   width: 33%;
@@ -118,7 +112,7 @@ Labs
   justify-content: space-around;
 }
 
-.contents .text {
+.contents__text {
   width: 70%;
 }
 
@@ -126,7 +120,7 @@ Labs
 talks
 */
 
-#talks {
+.talks {
   margin-bottom: 5%;
   margin-right: 5%;
   width: 33%;
@@ -135,7 +129,8 @@ talks
 /* 
 Articles
 */
-#articles {
+
+.articles {
   margin-bottom: 5%;
   margin-right: 5%;
   width: 33%;
@@ -145,28 +140,23 @@ Articles
 Links
 */
 
-#links {
+.links {
   margin-bottom: 5%;
 }
 
 .container {
   display: flex;
-  /* 左寄せ */
   justify-content: flex-start;
-  /* ロゴ間のスペース */
   gap: 3%;
 }
 
-/*  */
-.container>div {
-  /* コンテナ内で均等幅にする */
+.container__item {
   flex: 1;
   display: flex;
   width: 85%;
 }
 
 .logo-1 img {
-  /* 画像を親要素の幅に合わせて縮小 */
   max-width: 100%;
   height: auto;
 }
@@ -184,26 +174,24 @@ Links
   padding: 1% 5%;
 }
 
-li.policy-li {
+.policy__item {
   margin-right: 4%;
 }
 
-#footer {
+.footer {
   background-color: black;
   color: #e9e9e9;
   height: 12vh;
 }
 
-#footer p {
+.footer p {
   text-align: right;
   margin: 1%;
 }
 
-.footer-icon {
+.footer__icons {
   display: flex;
-  /* 左寄せ */
   justify-content: flex-start;
-  ;
 }
 
 .icon img {
@@ -240,7 +228,7 @@ li.policy-li {
   padding: 0 5%;
 }
 
-.contact-us-title {
+.contact-group__title {
   font-size: 2rem;
 }
 
@@ -248,32 +236,25 @@ li.policy-li {
 レスポンシブ
 */
 
-/* TODO */
 @media screen and (max-width: 968px) {
 
-  /* セクションを縦配置にする */
   .flex {
     flex-direction: column;
   }
 
-  /* メイン画像の文字サイズ */
-  #header .top {
+  .header__top {
     font-size: 4rem;
   }
 
-  /* タイトルグループ */
   .group {
     text-align: center;
-
   }
 
-  /* About usのアンダーライン */
   .underline {
     width: 100%;
   }
 
-  /* About us以外のアンダーライン */
-  .underline-flex {
+  .underline--flex {
     width: 100%;
   }
 
@@ -285,21 +266,21 @@ li.policy-li {
     text-align: center;
   }
 
-  #about {
+  .about {
     margin-bottom: 5%;
   }
 
-  #labs {
+  .labs {
     width: 100%;
     margin-bottom: 5%;
   }
 
-  #talks {
+  .talks {
     width: 100%;
     margin-bottom: 5%;
   }
 
-  #articles {
+  .articles {
     width: 100%;
     margin-bottom: 10%;
   }

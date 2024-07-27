@@ -3,88 +3,85 @@
 
 <head>
   <meta charset="UTF-8">
-  <!-- TODO title -->
   <title>CDI INFO</title>
-  <!-- TODO content -->
   <meta name="description" content="会社紹介サイトxxxxxxxxxxxxxxxxxxxxx">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- TODO ファビコン -->
   <link rel="icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
-  <!-- TODO フォント -->
 </head>
 
 <body>
   <!-- ヘッダー -->
-  <header id="header">
-    <h1 class="top">CDI INFO</h1>
+  <header class="header">
+    <h1 class="header__top">CDI INFO</h1>
   </header>
   <main>
     <!-- About us -->
-    <section id="about" class="wrapper">
+    <section class="about wrapper">
       <div class="group">
-        <h1>About Us</h1>
+        <h1 class="group__title">About Us</h1>
         <div class="underline"></div>
-        <h2>CDI Info とは</h2>
+        <h2 class="group__subtitle">CDI Info とは</h2>
       </div>
       <!-- 説明文 -->
       <div class="text">
         <p>
           CDI(コンポーザブル・ディスアグリゲーテッド・インフラストラクチャー)の関連情報を
           共有することを目的とするサイトです。このサイトは、質問企業の協力による運営されています。
+        </p>
       </div>
-
     </section>
 
     <div class="wrapper flex">
       <!-- Labs -->
-      <section id="labs" onclick="location.href='https://github.com/vaj/CDI-Labs'" style="cursor: pointer;">
+      <section class="labs" onclick="location.href='https://github.com/vaj/CDI-Labs'" style="cursor: pointer;">
         <div class="group">
-          <h1>Labs</h1>
-          <div class="underline-flex"></div>
-          <h2>検証情報など</h2>
+          <h1 class="group__title">Labs</h1>
+          <div class="underline underline--flex"></div>
+          <h2 class="group__subtitle">検証情報など</h2>
         </div>
         <!-- コンテンツ -->
         <div class="contents">
           <div class="icon">
             <img src="img/icon_pc.png" alt="">
           </div>
-          <div class="text">
+          <div class="contents__text">
             <p>CDIソリューションの検証情報を共有します。</p>
           </div>
         </div>
       </section>
 
       <!-- CDI Related Talks -->
-      <section id="talks" onclick="location.href='https://github.com/vaj/CDI-Info'" style="cursor: pointer;">
+      <section class="talks" onclick="location.href='https://github.com/vaj/CDI-Info'" style="cursor: pointer;">
         <div class="group">
-          <h1>Related Talks</h1>
-          <div class="underline-flex"></div>
-          <h2>講演情報など</h2>
+          <h1 class="group__title">Related Talks</h1>
+          <div class="underline underline--flex"></div>
+          <h2 class="group__subtitle">講演情報など</h2>
         </div>
         <!-- コンテンツ -->
         <div class="contents">
           <div class="icon">
             <img src="img/icon_talk.png" alt="">
           </div>
-          <div class="text">
+          <div class="contents__text">
             <p>CDI関連の講演情報を共有します。</p>
           </div>
         </div>
       </section>
+
       <!-- Articles -->
-      <section id="articles" onclick="location.href='https://github.com/vaj/CDI-Articles'" style="cursor: pointer;">
+      <section class="articles" onclick="location.href='https://github.com/vaj/CDI-Articles'" style="cursor: pointer;">
         <div class="group">
-          <h1>Articles</h1>
-          <div class="underline-flex"></div>
-          <h2>技術記事</h2>
+          <h1 class="group__title">Articles</h1>
+          <div class="underline underline--flex"></div>
+          <h2 class="group__subtitle">技術記事</h2>
         </div>
         <!-- コンテンツ -->
         <div class="contents">
           <div class="icon">
             <img src="img/icon_note.png" alt="">
           </div>
-          <div class="text">
+          <div class="contents__text">
             <p>CDI関連の技術情報を共有します。</p>
           </div>
         </div>
@@ -92,51 +89,50 @@
     </div>
 
     <!-- Company Links -->
-    <section id="links" class="wrapper">
+    <section class="links wrapper">
       <div class="group">
-        <h1>Company Links</h1>
+        <h1 class="group__title">Company Links</h1>
         <div class="underline"></div>
-        <h2>参加企業</h2>
+        <h2 class="group__subtitle">参加企業</h2>
       </div>
       <div class="container">
-        <div class="logo-1">
+        <div class="container__item logo-1">
           <a href="https://www.valinux.co.jp/">
             <img src="img/company-logo.jpeg" alt="">
           </a>
         </div>
-        <div class="logo-2"></div>
-        <div class="logo-3"></div>
-        <div class="logo-4"></div>
+        <div class="container__item logo-2"></div>
+        <div class="container__item logo-3"></div>
+        <div class="container__item logo-4"></div>
       </div>
-
     </section>
 
     <!-- Contact Us -->
-    <section id="contact" class="wrapper">
+    <section class="contact wrapper">
       <div class="contact-group">
-        <h1 class="contact-us-title">Contact Us</h1>
-        <div class="footer-icon">
+        <h1 class="contact-group__title">Contact Us</h1>
+        <div class="footer__icons">
           <div class="x-icon">
             <a href="https://twitter.com/valinuxofficial">
               <img src="img/logo-black.png" alt="">
+            </a>
           </div>
-          </a>
           <div class="mail-icon">
             <a href="mailto:webmaster@valinux.co.jp">
               <img src="img/mail.png" alt="">
+            </a>
           </div>
-          </a>
         </div>
       </div>
     </section>
   </main>
-  <Footer id="footer">
+  <footer class="footer">
     <ul class="policy">
-      <li class="policy-li">プライバシーポリシー</li>
-      <li class="policy-li">免責事項</li>
+      <li class="policy__item">プライバシーポリシー</li>
+      <li class="policy__item">免責事項</li>
     </ul>
     <p>cdi-info.jp brought to you by VA Linux Systems Japan.</p>
-  </Footer>
+  </footer>
 </body>
 
-</html>
+</html> 
