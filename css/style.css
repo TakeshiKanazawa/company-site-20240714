@@ -61,9 +61,8 @@ header
 }
 
 .group__subtitle {
-  font-size: 1.6em;
-  margin: 10px 0 0 0;
-  padding: 0;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .underline {
@@ -94,7 +93,7 @@ About us
 */
 
 .about {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 /* 
@@ -113,7 +112,8 @@ Labs
 }
 
 .contents__text {
-  width: 70%;
+  width: 68%;
+  font-size: 1.3rem;
 }
 
 /* 
@@ -193,9 +193,13 @@ Links
   display: flex;
   justify-content: flex-start;
 }
+.icon{
+  width: 30%;
+  padding: 0;
+} 
 
 .icon img {
-  max-width: 60%;
+  max-width: 100%;
 }
 
 .x-icon {
@@ -264,6 +268,12 @@ Links
 
   .text p {
     text-align: center;
+    margin: 0 auto;
+    font-size: 1.3rem;
+  }
+
+  .contents__text {
+    font-size: 1.5rem;
   }
 
   .about {
@@ -284,4 +294,49 @@ Links
     width: 100%;
     margin-bottom: 10%;
   }
+
+  /* Company Links */
+  .container__item.logo-1 {
+    width: 45%;
+  }
+
+  .container {
+    display: block;
+  }
+
+  /* footer icon */
+  .x-icon {
+    width: 15%;
+    margin-right: 5%;
+  }
+
+  .mail-icon {
+    width: 15%;
+    margin-right: 5%;
+  }
+
+  /* Footer */
+  .footer p {
+    font-size: 0.8rem;
+  }
+
+  .policy__item {
+    font-size: 0.8rem;
+  }
+
+  .policy {
+    padding: 3% 4%;
+  }
+  .icon {
+  flex-shrink: 0; /* アイコンが縮小されないようにする */
+  margin-right: 10px; /* 必要に応じて調整 */
+}
+
+.contents__text {
+  text-align: center;
+}
+.footer {
+  height: 13.5vh;
+}
+
 }
