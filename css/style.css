@@ -43,6 +43,7 @@ header
   top: -10%;
   color: white;
   font-size: 9rem;
+  transform: translate(9%, -10%);
 }
 
 /* 共通のコンテンツ幅設定クラス */
@@ -266,6 +267,7 @@ Links
     right: 10%;
     top: 5%;
     font-size: 6rem;
+    transform: translate(10%, 5%);
   }
 
   .group {
@@ -358,6 +360,7 @@ Links
 @media screen and (max-width: 620px) {
   .header__top {
     font-size: 3rem;
+    transform: translate(10%, 5%);
   }
 
   .header {
