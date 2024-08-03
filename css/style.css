@@ -195,6 +195,7 @@ Links
 .footer__icons {
   display: flex;
   justify-content: flex-start;
+  width: 100%;
 }
 
 .icon {
@@ -214,6 +215,7 @@ img.img_talks {
 img.img_articles {
   max-width: 107%;
 }
+
 .x-icon {
   width: 7%;
   margin-right: 5%;
@@ -240,7 +242,7 @@ img.img_articles {
 }
 
 .contact-group {
-  padding: 0 5%;
+  padding: 0 2%;
 }
 
 .contact-group__title {
@@ -323,13 +325,7 @@ img.img_articles {
   }
 
   /* Company Links */
-  .container__item.logo-1 {
-    width: 45%;
-  }
 
-  .container {
-    display: block;
-  }
 
   /* footer icon */
   .x-icon {
@@ -361,6 +357,10 @@ img.img_articles {
 
   .footer {
     height: 13.5vh;
+  }
+
+  .footer__icons {
+    width: 60%;
   }
 }
 
