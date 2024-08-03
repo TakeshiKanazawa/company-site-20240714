@@ -206,6 +206,14 @@ Links
   max-width: 100%;
 }
 
+img.img_talks {
+  margin-top: 10%;
+  max-width: 80%;
+}
+
+img.img_articles {
+  max-width: 107%;
+}
 .x-icon {
   width: 7%;
   margin-right: 5%;
@@ -219,7 +227,6 @@ Links
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 5%;
 }
 
 .button {
