@@ -56,6 +56,14 @@ ul {
   list-style: inside;
 }
 
+p {
+  font-size: 1rem;
+}
+
+ol {
+  font-size: 1rem;
+}
+
 .underline {
   text-decoration: underline;
 }
@@ -162,9 +170,7 @@ ul {
     font-size: 0.8rem;
   }
 
-  .policy__item {
-    font-size: 0.8rem;
-  }
+
 
   .policy {
     padding: 3% 4%;
