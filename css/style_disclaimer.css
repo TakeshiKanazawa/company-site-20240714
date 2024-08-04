@@ -8,7 +8,7 @@ body {
   font-family: 'Noto Sans JP', 'Montserrat', sans-serif;
 }
 
-.disclaimer {
+.policy {
   list-style: none;
 }
 
@@ -71,18 +71,18 @@ ul {
   margin: 1%;
 }
 
-.disclaimer {
+.policy {
   list-style: none;
   display: flex;
   justify-content: flex-start;
   padding: 1% 5%;
 }
 
-.disclaimer__item {
+.policy__item {
   margin-right: 4%;
 }
 
-.safedisclaimer-list {
+.safepolicy-list {
   text-decoration: none;
 }
 
@@ -96,16 +96,16 @@ ul {
   text-align: right;
 }
 
-.safedisclaimer__item {
+.safepolicy__item {
   list-style: none;
   counter-increment: cnt;
 }
 
-.safedisclaimer__item::before {
+.safepolicy__item::before {
   content: "(" counter(cnt) ") ";
 }
 
-.safedisclaimer__innneritem {
+.safepolicy__innneritem {
   list-style: none;
 }
 
@@ -162,11 +162,11 @@ ul {
     font-size: 0.8rem;
   }
 
-  .disclaimer__item {
+  .policy__item {
     font-size: 0.8rem;
   }
 
-  .disclaimer {
+  .policy {
     padding: 3% 4%;
   }
 
