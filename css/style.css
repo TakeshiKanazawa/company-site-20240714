@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* 共通 */
 html {
   font-size: 100%;
 }
@@ -20,10 +21,6 @@ img {
 li {
   list-style: none;
 }
-
-/* 
-header
-*/
 
 .header {
   width: 100%;
@@ -92,17 +89,9 @@ header
   font-size: 1.5rem;
 }
 
-/* 
-About us  
-*/
-
 .about {
   margin-bottom: 5%;
 }
-
-/* 
-Labs
-*/
 
 .labs {
   margin-bottom: 5%;
@@ -120,29 +109,17 @@ Labs
   font-size: 1.3rem;
 }
 
-/* 
-talks
-*/
-
 .talks {
   margin-bottom: 5%;
   margin-right: 5%;
   width: 33%;
 }
 
-/* 
-Articles
-*/
-
 .articles {
   margin-bottom: 5%;
   margin-right: 5%;
   width: 33%;
 }
-
-/* 
-Links
-*/
 
 .links {
   margin-bottom: 5%;
@@ -325,8 +302,6 @@ img.img_articles {
     margin-bottom: 10%;
   }
 
-  /* Company Links */
-
 
   /* footer icon */
   .x-icon {
@@ -339,7 +314,6 @@ img.img_articles {
     margin-right: 5%;
   }
 
-  /* Footer */
   .footer p {
     font-size: 0.8rem;
   }

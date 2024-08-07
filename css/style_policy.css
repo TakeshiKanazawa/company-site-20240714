@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* 共通 */
+
 html {
   font-size: 100%;
 }
@@ -19,10 +21,6 @@ a {
 
 img {
   max-width: 100%;
-}
-
-.policy__title {
-  text-align: center;
 }
 
 .header {
@@ -45,6 +43,10 @@ img {
   color: white;
   font-size: 9rem;
   transform: translate(9%, -10%);
+}
+
+.policy__title {
+  text-align: center;
 }
 
 /* 共通のコンテンツ幅設定クラス */
@@ -107,6 +109,7 @@ ol {
   box-sizing: border-box;
   color: #005288;
 }
+
 p.corp-cmn-txt.m--download {
   margin: 3% 0;
 }
@@ -137,8 +140,6 @@ p.corp-cmn-txt.m--download {
   text-align: center;
 }
 
-
-
 .textend {
   text-align: right;
 }
@@ -161,6 +162,8 @@ p.corp-cmn-txt.m--download {
   /* リンクの色を設定 */
   text-decoration: underline;
 }
+
+/* レスポンシブ */
 
 @media screen and (max-width: 968px) {
 
@@ -188,7 +191,6 @@ p.corp-cmn-txt.m--download {
     transform: translate(10%, 5%);
   }
 
-
   .group {
     text-align: center;
   }
@@ -201,8 +203,6 @@ p.corp-cmn-txt.m--download {
     width: 100%;
   }
 
-
-  /* Footer */
   .footer p {
     font-size: 0.8rem;
   }
@@ -210,7 +210,6 @@ p.corp-cmn-txt.m--download {
   .policy {
     padding: 3% 4%;
   }
-
 
   .footer {
     height: 13.5vh;
