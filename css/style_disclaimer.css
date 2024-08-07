@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* 共通 */
+
 html {
   font-size: 100%;
 }
@@ -21,8 +23,9 @@ img {
   max-width: 100%;
 }
 
-.disclaimer__title {
-  text-align: center;
+/* 共通のコンテンツ幅設定クラス */
+.wrapper {
+  padding: 0 5% 2% 5%;
 }
 
 .header {
@@ -47,9 +50,8 @@ img {
   transform: translate(9%, -10%);
 }
 
-/* 共通のコンテンツ幅設定クラス */
-.wrapper {
-  padding: 0 5% 2% 5%;
+.disclaimer__title {
+  text-align: center;
 }
 
 ul {
@@ -90,8 +92,6 @@ ul {
   text-align: center;
 }
 
-
-
 .textend {
   text-align: right;
 }
@@ -114,6 +114,8 @@ ul {
   /* リンクの色を設定 */
   text-decoration: underline;
 }
+
+/* レスポンシブ */
 
 @media screen and (max-width: 968px) {
 
@@ -153,10 +155,6 @@ ul {
     width: 100%;
   }
 
-
-
-
-
   /* Footer */
   .footer p {
     font-size: 0.8rem;
@@ -169,7 +167,6 @@ ul {
   .policy {
     padding: 3% 4%;
   }
-
 
   .footer {
     height: 13.5vh;
