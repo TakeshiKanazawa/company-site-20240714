@@ -163,12 +163,13 @@ li {
 .footer {
   background-color: black;
   color: #e9e9e9;
-  height: 12vh;
+  padding: 0 0 1% 0%;
 }
 
 .footer p {
   text-align: right;
   margin: 1%;
+  
 }
 
 .footer__icons {
@@ -329,10 +330,6 @@ img.img_articles {
 
   .contents__text {
     text-align: center;
-  }
-
-  .footer {
-    height: 13.5vh;
   }
 
   .footer__icons {
