@@ -48,10 +48,9 @@ li {
 
 /* 共通のコンテンツ幅設定クラス */
 .wrapper {
-  padding: 0 5%;
+  padding: 0 1%;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 0 1%;
 }
 
 .group {
@@ -244,7 +243,7 @@ img.img_articles {
 レスポンシブ
 */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 940px) {
 
   /*  メイン画像 */
   .header {
@@ -348,14 +347,3 @@ img.img_articles {
   }
 }
 
-@media screen and (max-width: 620px) {
-  .header__top {
-    font-size: 3rem;
-    transform: translate(10%, 5%);
-    visibility: hidden;
-  }
-
-  .header {
-    height: 25vh;
-  }
-}
