@@ -24,6 +24,7 @@ img {
 }
 
 .header {
+  margin: 0 auto;
   width: 100%;
   background-size: 100%;
   /* 画像を60%の高さ */
@@ -43,15 +44,21 @@ img {
   color: white;
   font-size: 9rem;
   transform: translate(9%, -10%);
+  visibility: hidden;
 }
 
 .policy__title {
   text-align: center;
 }
 
+.main-wrapper {
+  padding: 3% 5% 2% 5%;
+}
+
 /* 共通のコンテンツ幅設定クラス */
 .wrapper {
-  padding: 0 5% 2% 5%;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 ul {
@@ -165,13 +172,13 @@ p.corp-cmn-txt.m--download {
 
 /* レスポンシブ */
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 940px) {
 
   /*  メイン画像 */
   .header {
     width: 100%;
     height: 40vh;
-    background-image: url(../img/img_SP.png);
+    background-image: url(../img/img_Sphone.png);
     /* 画像の表示位置を指定 */
     background-size: 100%;
     background-position: 90% 0%;
@@ -211,15 +218,4 @@ p.corp-cmn-txt.m--download {
     padding: 3% 4%;
   }
 
-}
-
-@media screen and (max-width: 620px) {
-  .header__top {
-    font-size: 3rem;
-    transform: translate(10%, 5%);
-  }
-
-  .header {
-    height: 25vh;
-  }
 }
