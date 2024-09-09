@@ -236,6 +236,10 @@ img.img_articles {
   font-size: 2rem;
 }
 
+.main-wrapper {
+  padding: 5% 5% 0 5%;
+}
+
 /* 
 レスポンシブ
 */
