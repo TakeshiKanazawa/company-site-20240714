@@ -48,7 +48,7 @@ li {
 
 /* 共通のコンテンツ幅設定クラス */
 .wrapper {
-  padding: 0 1%;
+  padding: 0 %;
   max-width: 1800px;
   margin: 0 auto;
 }
@@ -345,5 +345,25 @@ img.img_articles {
   .footer__icons {
     width: 60%;
   }
+}
+
+@media screen and (max-width: 675px) {
+  .header {
+    height: 35vh;
+}
+
+
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    height: 28vh;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    height: 20vh;
+}
 }
 

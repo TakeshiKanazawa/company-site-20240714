@@ -174,5 +174,25 @@ ul {
   .policy {
     padding: 3% 4%;
   }
+}
+
+@media screen and (max-width: 675px) {
+  .header {
+    height: 35vh;
+}
+
 
 }
+
+@media screen and (max-width: 550px) {
+  .header {
+    height: 28vh;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    height: 20vh;
+}
+}
+
