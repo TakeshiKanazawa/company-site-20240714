@@ -184,7 +184,7 @@ p.corp-cmn-txt.m--download {
     background-position: 90% 0%;
     background-repeat: no-repeat;
     position: relative;
-    margin-bottom: 5%;
+    
   }
 
   .flex {
@@ -217,5 +217,25 @@ p.corp-cmn-txt.m--download {
   .policy {
     padding: 3% 4%;
   }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    height: 35vh;
+}
+
 
 }
+
+@media screen and (max-width: 610px) {
+  .header {
+    height: 28vh;
+}
+}
+
+@media screen and (max-width: 430px) {
+  .header {
+    height: 20vh;
+}
+}
+
