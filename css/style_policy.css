@@ -214,6 +214,10 @@ p.corp-cmn-txt.m--download {
     font-size: 0.8rem;
   }
 
+  .policy__item {
+    font-size: 0.8rem;
+  }
+
   .policy {
     padding: 3% 4%;
   }
