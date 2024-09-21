@@ -48,7 +48,7 @@ li {
 
 /* 共通のコンテンツ幅設定クラス */
 .wrapper {
-  padding: 0 %;
+  padding: 0%;
   max-width: 1800px;
   margin: 0 auto;
 }
@@ -247,13 +247,13 @@ img.img_articles {
   /*  メイン画像 */
   .header {
     width: 100%;
-    height: 40vh;
-    background-image: url(../img/img_Sphone.png);
+    background-image: url(../img/img_SP.png);
     /* 画像の表示位置を指定 */
     background-size: 100%;
     background-position: 90% 0%;
     background-repeat: no-repeat;
     position: relative;
+    height: 65vh;
   }
 
   .flex {
@@ -345,23 +345,40 @@ img.img_articles {
   }
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 840px) {
   .header {
-    height: 35vh;
+    height: 56vh;
+}
 }
 
-
+@media screen and (max-width: 735px) {
+  .header {
+    height: 49vh;
+}
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .header {
-    height: 28vh;
+    height: 39vh;
+}
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    height: 32vh;
 }
 }
 
 @media screen and (max-width: 400px) {
   .header {
-    height: 20vh;
+    height: 32vh;
 }
+}
+
+@media screen and (max-width: 350px) {
+  .header {
+    height: 22vh;
+}
+
 }
 
