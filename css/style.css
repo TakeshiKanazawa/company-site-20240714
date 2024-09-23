@@ -26,7 +26,6 @@ li {
   margin: 0 auto;
   width: 100%;
   background-size: 100%;
-  /* 画像を60%の高さ */
   height: 50vh;
   background-image: url(../img/img_PC.png);
   /* 画像の表示位置を指定 */
@@ -369,11 +368,6 @@ img.img_articles {
 }
 }
 
-@media screen and (max-width: 400px) {
-  .header {
-    height: 32vh;
-}
-}
 
 @media screen and (max-width: 350px) {
   .header {
